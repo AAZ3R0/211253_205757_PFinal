@@ -7,11 +7,18 @@
 
 import UIKit
 
-class RelojMundialTableViewController: UITableViewController {
+
+
+class RelojMundialTableViewController: UITableViewController, RelojMundialProtocol {
     
-    var timeZonesPorMostrar: [String] = ["GMT", "Europe/París", "Asia/Dubai", "America/New_York"]
+    var timeZonesPorMostrar: [String] = []
     
     
+    
+    func addZonaHoraria(zonaHoraria: String) {
+        timeZonesPorMostrar.append(zonaHoraria)
+        tableView.reloadData()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,14 +92,17 @@ class RelojMundialTableViewController: UITableViewController {
         return true
     }
 
-    /*
+    
     // MARK: - Navigation
-
+    //Método para pasar el elemento de su vista orginaria a la siguiente
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "modalViewSegue"{
+            
+            let destino = segue.destination as! ZonaTiempoTableViewController
+            destino.delegate = self
+        }
     }
-    */
+    
 
 }

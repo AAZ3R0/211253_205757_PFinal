@@ -79,7 +79,7 @@
                     <navigationItem key="navigationItem" title="Reloj mundial" leftItemsSupplementBackButton="YES" id="jXK-2L-cAx">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BWg-5q-3gd">
                             <connections>
-                                <segue destination="FIv-8d-7EJ" kind="presentation" id="q7r-kn-n2H"/>
+                                <segue destination="FIv-8d-7EJ" kind="presentation" identifier="modalViewSegue" id="q7r-kn-n2H"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -132,6 +132,9 @@
                             <outlet property="delegate" destination="FIv-8d-7EJ" id="yp0-wv-O0F"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="searchText" destination="rbg-1q-etQ" id="oTW-qe-po1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="st5-tM-Rdp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
