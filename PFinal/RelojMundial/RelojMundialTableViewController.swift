@@ -18,12 +18,17 @@ class RelojMundialTableViewController: UITableViewController, RelojMundialProtoc
     func addZonaHoraria(zonaHoraria: String) {
         timeZonesPorMostrar.append(zonaHoraria)
         tableView.reloadData()
+        setUserDefaults()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        timeZonesPorMostrar = getUserDefaults()
     }
 
     // MARK: - Table view data source
@@ -67,6 +72,7 @@ class RelojMundialTableViewController: UITableViewController, RelojMundialProtoc
             timeZonesPorMostrar.remove(at: indexPath.row)
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
+            setUserDefaults()
             }
         }
     
@@ -81,6 +87,8 @@ class RelojMundialTableViewController: UITableViewController, RelojMundialProtoc
         timeZonesPorMostrar[to.row] = temp1
         
         tableView.reloadData()
+        
+        setUserDefaults()
 
     }
     
@@ -102,6 +110,25 @@ class RelojMundialTableViewController: UITableViewController, RelojMundialProtoc
             let destino = segue.destination as! ZonaTiempoTableViewController
             destino.delegate = self
         }
+    }
+    
+    
+    // Mark: - User Defaults
+    
+    func setUserDefaults(){
+        
+        UserDefaults.standard.set(timeZonesPorMostrar, forKey: "WorldClocks")
+        UserDefaults.standard.synchronize()
+        
+        
+    }
+    
+    func getUserDefaults() -> [String]{
+        if UserDefaults.standard.value(forKey: "WorldClocks") != nil {
+            timeZonesPorMostrar = UserDefaults.standard.value(forKey: "WorldClocks") as! [String]
+        }
+        
+        return timeZonesPorMostrar
     }
     
 
