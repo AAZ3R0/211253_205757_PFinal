@@ -21,11 +21,12 @@
                     <connections>
                         <segue destination="BDR-rd-mCR" kind="relationship" relationship="viewControllers" id="10H-1w-Ihi"/>
                         <segue destination="lr5-x8-w5N" kind="relationship" relationship="viewControllers" id="LyG-vR-c0G"/>
+                        <segue destination="U1l-c4-0ap" kind="relationship" relationship="viewControllers" id="zBJ-Gh-2py"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kO4-Y5-OaI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1666" y="-382"/>
+            <point key="canvasLocation" x="-2370" y="-382"/>
         </scene>
         <!--Reloj mundial-->
         <scene sceneID="a4j-Ck-FqT">
@@ -44,27 +45,33 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60U-J4-CFw">
-                                            <rect key="frame" x="20" y="11" width="353" height="0.0"/>
+                                            <rect key="frame" x="20" y="11" width="353" height="53"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlG-lo-1Oo">
-                                            <rect key="frame" x="20" y="19" width="353" height="108"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlG-lo-1Oo">
+                                            <rect key="frame" x="20" y="72" width="353" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="55" id="c9X-Ha-J2J"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="TlG-lo-1Oo" secondAttribute="bottom" id="6Oq-NZ-h20"/>
-                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="leading" secondItem="XMj-hg-jCN" secondAttribute="leadingMargin" id="AHK-Gq-HOc"/>
-                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="trailing" secondItem="XMj-hg-jCN" secondAttribute="trailingMargin" id="PfR-sp-P4n"/>
-                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="top" secondItem="60U-J4-CFw" secondAttribute="bottom" constant="8" symbolic="YES" id="Qg0-uc-d0o"/>
-                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="top" secondItem="60U-J4-CFw" secondAttribute="bottom" constant="8" symbolic="YES" id="QlZ-cn-WIc"/>
-                                        <constraint firstItem="60U-J4-CFw" firstAttribute="leading" secondItem="XMj-hg-jCN" secondAttribute="leadingMargin" id="VOY-ST-qCd"/>
-                                        <constraint firstItem="60U-J4-CFw" firstAttribute="trailing" secondItem="XMj-hg-jCN" secondAttribute="trailingMargin" id="in9-Xa-rN5"/>
-                                        <constraint firstItem="60U-J4-CFw" firstAttribute="top" secondItem="XMj-hg-jCN" secondAttribute="topMargin" id="m8Z-ne-6lQ"/>
+                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="trailing" secondItem="60U-J4-CFw" secondAttribute="trailing" id="0df-r2-ghe"/>
+                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="leading" secondItem="60U-J4-CFw" secondAttribute="trailing" constant="-353" id="5xI-qA-6s3"/>
+                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="leading" secondItem="60U-J4-CFw" secondAttribute="leading" id="Ih1-Au-SrH"/>
+                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="bottom" secondItem="XMj-hg-jCN" secondAttribute="bottomMargin" id="Ix4-wQ-AvO"/>
+                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="top" secondItem="60U-J4-CFw" secondAttribute="bottom" constant="8" symbolic="YES" id="PKc-PN-hjF"/>
+                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="leading" secondItem="XMj-hg-jCN" secondAttribute="leadingMargin" id="QBJ-tr-uPL"/>
+                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="trailing" secondItem="XMj-hg-jCN" secondAttribute="trailingMargin" id="XTo-H1-YTR"/>
+                                        <constraint firstItem="60U-J4-CFw" firstAttribute="leading" secondItem="XMj-hg-jCN" secondAttribute="leadingMargin" id="fvV-3j-TLH"/>
+                                        <constraint firstItem="60U-J4-CFw" firstAttribute="top" secondItem="XMj-hg-jCN" secondAttribute="topMargin" id="j3x-rB-Zey"/>
+                                        <constraint firstItem="60U-J4-CFw" firstAttribute="trailing" secondItem="XMj-hg-jCN" secondAttribute="trailingMargin" id="pi2-OK-Dta"/>
+                                        <constraint firstItem="TlG-lo-1Oo" firstAttribute="bottom" secondItem="XMj-hg-jCN" secondAttribute="bottomMargin" id="xKa-S9-202"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -88,7 +95,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2b-kK-sKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362.59541984732823" y="-382.3943661971831"/>
+            <point key="canvasLocation" x="362.59541984732823" y="-1177.4647887323945"/>
         </scene>
         <!--Zona Tiempo Table View Controller-->
         <scene sceneID="xVW-eg-AGn">
@@ -140,7 +147,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="st5-tM-Rdp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122.9007633587785" y="-382.3943661971831"/>
+            <point key="canvasLocation" x="1244" y="-1177"/>
         </scene>
         <!--Reloj mundial-->
         <scene sceneID="V1h-Kx-wh7">
@@ -159,9 +166,116 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i7Z-cs-6gk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-564" y="-1177"/>
+        </scene>
+        <!--Cronómetro-->
+        <scene sceneID="wDW-Ss-vtt">
+            <objects>
+                <viewController id="U1l-c4-0ap" customClass="CronometroViewController" customModule="PFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcp-wg-hpp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWO-Yr-x04">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <items>
+                                    <navigationItem title="Cronómetro" id="qPE-B3-Lps"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:05.88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USd-bW-pq3">
+                                <rect key="frame" x="17.333333333333343" y="103" width="358.66666666666663" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="QGS-zd-eNu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lb0-FX-c9O">
+                                <rect key="frame" x="0.0" y="349" width="393" height="420"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="9aD-Qs-gYR" style="IBUITableViewCellStyleDefault" id="7P6-r8-75D" customClass="CronometroTableViewCell" customModule="PFinal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7P6-r8-75D" id="NeL-MA-VQn">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9aD-Qs-gYR">
+                                                    <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="U1l-c4-0ap" id="U0s-oF-i16"/>
+                                    <outlet property="delegate" destination="U1l-c4-0ap" id="5O3-c9-v4c"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOY-aU-S9m">
+                                <rect key="frame" x="16" y="230" width="177" height="63"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Iniciar"/>
+                                <connections>
+                                    <action selector="startStop:" destination="U1l-c4-0ap" eventType="touchUpInside" id="bsY-Mn-LWV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMT-XS-fmO">
+                                <rect key="frame" x="200" y="230" width="177" height="63"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Resetear"/>
+                                <connections>
+                                    <action selector="lapReset:" destination="U1l-c4-0ap" eventType="touchUpInside" id="jfd-7N-6QK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C0o-wa-cwh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lb0-FX-c9O" firstAttribute="bottom" secondItem="C0o-wa-cwh" secondAttribute="bottom" id="2UG-AO-6lB"/>
+                            <constraint firstItem="C0o-wa-cwh" firstAttribute="trailing" secondItem="FOY-aU-S9m" secondAttribute="trailing" constant="200" id="38R-xK-DIT"/>
+                            <constraint firstItem="Lb0-FX-c9O" firstAttribute="top" secondItem="FOY-aU-S9m" secondAttribute="bottom" constant="56" id="7Nq-5j-bge"/>
+                            <constraint firstItem="Lb0-FX-c9O" firstAttribute="top" secondItem="gMT-XS-fmO" secondAttribute="bottom" constant="56" id="Ayo-Kk-MHy"/>
+                            <constraint firstItem="gMT-XS-fmO" firstAttribute="top" secondItem="C0o-wa-cwh" secondAttribute="top" constant="171" id="B48-WS-wHm"/>
+                            <constraint firstItem="C0o-wa-cwh" firstAttribute="bottom" secondItem="USd-bW-pq3" secondAttribute="bottom" constant="586" id="BH5-RR-M89"/>
+                            <constraint firstItem="FOY-aU-S9m" firstAttribute="top" secondItem="USd-bW-pq3" secondAttribute="bottom" constant="47" id="G7v-Uk-WoE"/>
+                            <constraint firstItem="gMT-XS-fmO" firstAttribute="top" secondItem="USd-bW-pq3" secondAttribute="bottom" constant="47" id="ITK-w4-SWT"/>
+                            <constraint firstItem="C0o-wa-cwh" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="USd-bW-pq3" secondAttribute="trailing" id="Oqw-Qj-S6U"/>
+                            <constraint firstItem="Lb0-FX-c9O" firstAttribute="trailing" secondItem="C0o-wa-cwh" secondAttribute="trailing" id="PIO-cb-ZO2"/>
+                            <constraint firstItem="Lb0-FX-c9O" firstAttribute="top" secondItem="C0o-wa-cwh" secondAttribute="top" constant="290" id="PM3-Eg-Ca3"/>
+                            <constraint firstItem="fWO-Yr-x04" firstAttribute="trailing" secondItem="Lb0-FX-c9O" secondAttribute="trailing" id="Qd6-sH-Q98"/>
+                            <constraint firstItem="USd-bW-pq3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="C0o-wa-cwh" secondAttribute="leading" id="WPT-XJ-x7g"/>
+                            <constraint firstItem="Lb0-FX-c9O" firstAttribute="leading" secondItem="C0o-wa-cwh" secondAttribute="leading" id="dUw-6S-rDo"/>
+                            <constraint firstItem="FOY-aU-S9m" firstAttribute="top" secondItem="C0o-wa-cwh" secondAttribute="top" constant="171" id="iTf-zh-gbX"/>
+                            <constraint firstItem="USd-bW-pq3" firstAttribute="top" secondItem="fWO-Yr-x04" secondAttribute="bottom" id="kUK-Nc-Tmd"/>
+                            <constraint firstItem="fWO-Yr-x04" firstAttribute="leading" secondItem="vcp-wg-hpp" secondAttribute="leading" id="oA1-Gz-wSQ"/>
+                            <constraint firstItem="FOY-aU-S9m" firstAttribute="leading" secondItem="C0o-wa-cwh" secondAttribute="leading" constant="16" id="oP2-80-sp6"/>
+                            <constraint firstItem="fWO-Yr-x04" firstAttribute="centerX" secondItem="USd-bW-pq3" secondAttribute="centerX" id="plM-Ve-Vja"/>
+                            <constraint firstItem="gMT-XS-fmO" firstAttribute="leading" secondItem="C0o-wa-cwh" secondAttribute="leading" constant="200" id="qlo-s1-Tqg"/>
+                            <constraint firstItem="C0o-wa-cwh" firstAttribute="trailing" secondItem="gMT-XS-fmO" secondAttribute="trailing" constant="16" id="sp9-d2-xVt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cronómetro" image="clock.arrow.circlepath" catalog="system" id="u3Q-Ux-YJW"/>
+                    <connections>
+                        <outlet property="CronometroLabel" destination="USd-bW-pq3" id="BhD-9S-G9w"/>
+                        <outlet property="Resetear" destination="gMT-XS-fmO" id="FUU-u1-he3"/>
+                        <outlet property="btnIniciar" destination="FOY-aU-S9m" id="vEq-qb-FmL"/>
+                        <outlet property="lapsTableView" destination="Lb0-FX-c9O" id="mGH-dk-alt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1K-vG-EPi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-564.12213740458014" y="-382.3943661971831"/>
         </scene>
-        <!--Item-->
+        <!--Temporizador-->
         <scene sceneID="6KK-HV-hRA">
             <objects>
                 <viewController id="lr5-x8-w5N" sceneMemberID="viewController">
@@ -171,17 +285,25 @@
                         <viewLayoutGuide key="safeArea" id="X8Q-sY-vAy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rSX-aK-wQI"/>
+                    <tabBarItem key="tabBarItem" title="Temporizador" image="clock.arrow.2.circlepath" catalog="system" id="rSX-aK-wQI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3VU-dV-DCa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-564" y="347"/>
+            <point key="canvasLocation" x="-564" y="376"/>
         </scene>
     </scenes>
     <resources>
         <image name="clock" catalog="system" width="128" height="123"/>
+        <image name="clock.arrow.2.circlepath" catalog="system" width="128" height="104"/>
+        <image name="clock.arrow.circlepath" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
