@@ -21,6 +21,7 @@
 		FB3A4CC32CF0E50100AE9F81 /* ZonaTiempoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3A4CC22CF0E50100AE9F81 /* ZonaTiempoTableViewCell.swift */; };
 		FBA138422CF1393B00FE4F0B /* CronometroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA138412CF1393B00FE4F0B /* CronometroViewController.swift */; };
 		FBA138442CF1441700FE4F0B /* CronometroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA138432CF1441700FE4F0B /* CronometroTableViewCell.swift */; };
+		FBA3F5442CF15CB200FFD6B9 /* TemporizadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3F5432CF15CB200FFD6B9 /* TemporizadorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		FB3A4CC42CF0EC1200AE9F81 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FBA138412CF1393B00FE4F0B /* CronometroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronometroViewController.swift; sourceTree = "<group>"; };
 		FBA138432CF1441700FE4F0B /* CronometroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronometroTableViewCell.swift; sourceTree = "<group>"; };
+		FBA3F5432CF15CB200FFD6B9 /* TemporizadorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporizadorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		FB3A4C892CF0DBD100AE9F81 /* PFinal */ = {
 			isa = PBXGroup;
 			children = (
+				FBA3F5422CF15A3600FFD6B9 /* Temporizador */,
 				FBA138402CF138F100FE4F0B /* Cronometro */,
 				FB3A4CBD2CF0E1E800AE9F81 /* RelojMundial */,
 				FB3A4CBA2CF0DCDD00AE9F81 /* Controllers */,
@@ -166,6 +169,14 @@
 				FBA138432CF1441700FE4F0B /* CronometroTableViewCell.swift */,
 			);
 			path = Cronometro;
+			sourceTree = "<group>";
+		};
+		FBA3F5422CF15A3600FFD6B9 /* Temporizador */ = {
+			isa = PBXGroup;
+			children = (
+				FBA3F5432CF15CB200FFD6B9 /* TemporizadorViewController.swift */,
+			);
+			path = Temporizador;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 				FB3A4CC12CF0E3C800AE9F81 /* ZonaTiempoTableViewController.swift in Sources */,
 				FBA138422CF1393B00FE4F0B /* CronometroViewController.swift in Sources */,
 				FB3A4CC32CF0E50100AE9F81 /* ZonaTiempoTableViewCell.swift in Sources */,
+				FBA3F5442CF15CB200FFD6B9 /* TemporizadorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
