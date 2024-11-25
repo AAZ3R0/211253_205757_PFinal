@@ -119,7 +119,6 @@
 				FB5EC59F2CF4D83A0014F979 /* Lista */,
 				FBA138402CF138F100FE4F0B /* Cronometro */,
 				FB3A4CBD2CF0E1E800AE9F81 /* RelojMundial */,
-				FB3A4CBA2CF0DCDD00AE9F81 /* Controllers */,
 				FB3A4C8A2CF0DBD100AE9F81 /* AppDelegate.swift */,
 				FB3A4C8C2CF0DBD100AE9F81 /* SceneDelegate.swift */,
 				FB3A4C8E2CF0DBD100AE9F81 /* ViewController.swift */,
@@ -146,13 +145,6 @@
 				FB3A4CAD2CF0DBD100AE9F81 /* PFinalUITestsLaunchTests.swift */,
 			);
 			path = PFinalUITests;
-			sourceTree = "<group>";
-		};
-		FB3A4CBA2CF0DCDD00AE9F81 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FB3A4CBD2CF0E1E800AE9F81 /* RelojMundial */ = {

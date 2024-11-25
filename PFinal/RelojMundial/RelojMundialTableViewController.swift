@@ -8,15 +8,18 @@
 import UIKit
 
 
-
+//Clase que tiene como herencia un tableViewController para ser usada como controlador de la pantalla
+//También tiene una herencia para el protocolo llamado RelojMundialProtocol para poder realizar un filtro de búsqueda
 class RelojMundialTableViewController: UITableViewController, RelojMundialProtocol {
     
+    //Guardamos un arreglo de tipo string
     var timeZonesPorMostrar: [String] = []
     
     
-    
+    //Función para añadir una Zona Horaria en la lista personalizada
     func addZonaHoraria(zonaHoraria: String) {
         timeZonesPorMostrar.append(zonaHoraria)
+        //Recarga los datos de la tabla
         tableView.reloadData()
         setUserDefaults()
     }
@@ -33,17 +36,19 @@ class RelojMundialTableViewController: UITableViewController, RelojMundialProtoc
 
     // MARK: - Table view data source
 
+    //Número de veces que se repetirá el mismo dato en la tabla
     override func numberOfSections(in tableView: UITableView) -> Int {
        
         return 1
     }
-
+    
+    //Número de renglones de la tabla
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return timeZonesPorMostrar.count
     }
 
-    
+    //Altera los datos mostrados en la tabla
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ZonaTiempoTableViewCell
 
@@ -115,6 +120,8 @@ class RelojMundialTableViewController: UITableViewController, RelojMundialProtoc
     
     // Mark: - User Defaults
     
+    //Funciones para guardar los elementos de la lista personalizada
+    
     func setUserDefaults(){
         
         UserDefaults.standard.set(timeZonesPorMostrar, forKey: "WorldClocks")
@@ -123,6 +130,8 @@ class RelojMundialTableViewController: UITableViewController, RelojMundialProtoc
         
     }
     
+    
+    //Función para guardar los elementos de la lista pero en formato de cadena
     func getUserDefaults() -> [String]{
         if UserDefaults.standard.value(forKey: "WorldClocks") != nil {
             timeZonesPorMostrar = UserDefaults.standard.value(forKey: "WorldClocks") as! [String]

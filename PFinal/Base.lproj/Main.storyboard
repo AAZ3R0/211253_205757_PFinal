@@ -212,7 +212,7 @@
                                         <constraint firstAttribute="trailing" secondItem="JMW-iK-cNg" secondAttribute="trailing" constant="20" symbolic="YES" id="ewn-BH-2ZR"/>
                                         <constraint firstAttribute="bottom" secondItem="YCe-ay-Tl7" secondAttribute="bottom" constant="6" id="ile-Yy-PjA"/>
                                         <constraint firstItem="JMW-iK-cNg" firstAttribute="top" secondItem="EuH-Yz-NS9" secondAttribute="top" constant="11" id="k44-kW-WD0"/>
-                                        <constraint firstItem="JMW-iK-cNg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EuH-Yz-NS9" secondAttribute="leading" symbolic="YES" id="lQx-4h-dJJ"/>
+                                        <constraint firstItem="JMW-iK-cNg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EuH-Yz-NS9" secondAttribute="leading" constant="20" symbolic="YES" id="lQx-4h-dJJ"/>
                                         <constraint firstItem="JMW-iK-cNg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YCe-ay-Tl7" secondAttribute="trailing" constant="8" symbolic="YES" id="mYy-Cg-luK"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -246,7 +246,13 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWO-Yr-x04">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <color key="backgroundColor" systemColor="darkTextColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Cronómetro" id="qPE-B3-Lps"/>
                                 </items>
@@ -257,12 +263,14 @@
                                     <constraint firstAttribute="height" constant="80" id="QGS-zd-eNu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="63"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lb0-FX-c9O">
                                 <rect key="frame" x="0.0" y="349" width="393" height="420"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.88875241620000001" green="0.88875241620000001" blue="0.88875241620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.88875241620000001" green="0.88875241620000001" blue="0.88875241620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="9aD-Qs-gYR" style="IBUITableViewCellStyleDefault" id="7P6-r8-75D" customClass="CronometroTableViewCell" customModule="PFinal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -274,12 +282,14 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9aD-Qs-gYR">
                                                     <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" red="0.88875241620000001" green="0.88875241620000001" blue="0.88875241620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.88875241620000001" green="0.88875241620000001" blue="0.88875241620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -306,7 +316,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C0o-wa-cwh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.88875241620000001" green="0.88875241620000001" blue="0.88875241620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Lb0-FX-c9O" firstAttribute="bottom" secondItem="C0o-wa-cwh" secondAttribute="bottom" id="2UG-AO-6lB"/>
                             <constraint firstItem="C0o-wa-cwh" firstAttribute="trailing" secondItem="FOY-aU-S9m" secondAttribute="trailing" constant="200" id="38R-xK-DIT"/>
@@ -348,14 +358,17 @@
         <image name="clock" catalog="system" width="128" height="123"/>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="112"/>
         <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
