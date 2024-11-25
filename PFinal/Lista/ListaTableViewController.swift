@@ -20,12 +20,13 @@ class ListaTableViewController: UITableViewController, UISearchBarDelegate {
     //Variable referenciada al texto introducido en la barra de búsqueda
     @IBOutlet weak var SearchText: UISearchBar!
     
+    
+    
     //Método que inicializa a la hora de mostrarse la vista
     override func viewDidLoad() {
         super.viewDidLoad()
         //Es lo que permitirá hacer el filtro de búsqueda al texto de la barra de búsqueda
         SearchText.delegate = self
-        
         //Una constante que guardará el método URL y que como argumento tendrá la constante donde se guarda el enlace de la api
         let ubicacion = URL(string: url_api)!
         //Método URLSession para conectarse a al api de datos, con la anterior constante como parámetro
